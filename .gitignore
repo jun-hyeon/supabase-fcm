@@ -46,7 +46,7 @@ app.*.map.json
 /android/app/release
 
 /supabase/functions/service-account.json
-/firebase.json
+firebase.json
 /lib/firebase_options.dart
 
 # Lockfiles
