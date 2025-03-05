@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "241617857128",
+    "project_id": "supabase-fcm-b6789",
+    "storage_bucket": "supabase-fcm-b6789.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241617857128:android:cfc73fca8fa8e56c2ee9dd",
+        "android_client_info": {
+          "package_name": "com.example.chat_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUMICUd9--wmq5oZ-mNwKBnMnxWBgaAUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
