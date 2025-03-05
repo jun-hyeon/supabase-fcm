@@ -48,3 +48,8 @@ app.*.map.json
 /supabase/service-account.json
 /firebase.json
 /lib/firebase_options.dart
+
+# Lockfiles
+Podfile.lock
+pubspec.lock
+yarn.lock
