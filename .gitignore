@@ -47,7 +47,6 @@ app.*.map.json
 
 /supabase/functions/service-account.json
 firebase.json
-/lib/firebase_options.dart
 
 # Lockfiles
 Podfile.lock
