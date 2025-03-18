@@ -5,7 +5,8 @@ class ChatScreen extends StatefulWidget {
   final String receiverId;
   final String receiverName;
 
-  const ChatScreen({super.key, required this.receiverId, required this.receiverName});
+  const ChatScreen(
+      {super.key, required this.receiverId, required this.receiverName});
 
   @override
   _ChatScreenState createState() => _ChatScreenState();
@@ -50,29 +51,10 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         title: Text(
           widget.receiverName,
-        ),
-      ),
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 32.0, left: 16, right: 16),
-        child: Row(
-          children: [
-            Expanded(
-              child: TextField(
-                controller: _messageController,
-                decoration: const InputDecoration(
-                  hintText: "메시지 입력...",
-                  border: OutlineInputBorder(),
-                ),
-              ),
-            ),
-            IconButton(
-              icon: const Icon(Icons.send),
-              onPressed: () => sendMessage(_messageController.text),
-            ),
-          ],
         ),
       ),
       body: Column(
@@ -110,6 +92,26 @@ class _ChatScreenState extends State<ChatScreen> {
               },
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    controller: _messageController,
+                    decoration: const InputDecoration(
+                      hintText: '메시지 입력',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () => sendMessage(_messageController.text),
+                  icon: const Icon(Icons.send),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
