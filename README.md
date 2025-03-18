@@ -1,5 +1,5 @@
 # chat_test
 
-Flutter
-Supabase와 FCM을 이용한 채팅앱
+
+Flutter와 Supabase을 이용한 채팅앱
 
