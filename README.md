@@ -2,7 +2,7 @@
 
 
 Flutter와 Supabase을 이용한 채팅앱
-flutter v3.5.4
+<br>flutter v3.5.4
 
 <image src = https://github.com/user-attachments/assets/e2cdd4c3-235a-464a-8dfa-1c0abde982f5 width = 800 height = 400>
 <br>
